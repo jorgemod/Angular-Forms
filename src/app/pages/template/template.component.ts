@@ -12,7 +12,7 @@ export class TemplateComponent implements OnInit {
     nombre : "Jorge",
     apellido : "Juárez",
     correo: "coqueju97@gmail.com",
-    pais: ""
+    pais: "BOL"
   };
   paisess : any[] ;
   //injeccion del servicio de paises
@@ -38,8 +38,11 @@ export class TemplateComponent implements OnInit {
         control.markAsTouched();
       })
     }
-    console.log("form guardado");
-    console.log(forma.value);
+    else{
+
+      console.log("form guardado");
+      console.log(forma.value);
+    }
   }
 
 }

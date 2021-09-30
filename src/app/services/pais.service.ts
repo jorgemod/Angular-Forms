@@ -11,7 +11,7 @@ export class PaisService {
   //funcion que nos retorna los paises
   getPaises(){
     //return de la funcion
-    return this.http.get("https://restcountries.eu/rest/v2/lang/es").pipe(
+    return this.http.get("https://restcountries.com/v2/lang/es").pipe(
       //lo pasamos por un pipe para transformar la info y luego un map para recorrer todos los elementos
       map( (resp:any[]) =>{
         //retorno de la funcion map en donde recorreremos todo el arreglo con el map pero del arreglo
